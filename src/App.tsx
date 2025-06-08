@@ -24,10 +24,6 @@ export const App: React.FC = () => {
       .finally(() => setLoadingStatus(false));
   }, []);
 
-  useEffect(() => {
-    setTodoList(originTodos);
-  }, [originTodos]);
-
   return (
     <>
       <div className="section">
